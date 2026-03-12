@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Resume Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>📄 ATS Resume Checker</h2>
+        <textarea id="resumeText" placeholder="Paste your resume here..."></textarea>
+        <button class="btn btn-primary" onclick="checkATSScore()">Check Score</button>
+        <p>Your ATS Score: <span id="score">0%</span></p>
+        <h4>🚀 Missing Keywords:</h4>
+        <ul id="missingKeywords"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
